@@ -1,8 +1,37 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.println("Hello world!");
-        System.out.println("Hello world!");
+    int[] array = generateRandomArray();}
+    public static int[] generateRandomArray() {
+        java.util.Random random = new java.util.Random();
+        int[] arr = new int[30];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(100_000) + 100_000;
+        }
+        int sum=0;
+        for (int index = 0; index < arr.length; index++) {
+            sum += arr[index];}
+        System.out.println( "Сумма трат за месяц составила  " + sum + " рублей");
+        // Задача 2
+        int maxMoney = 100000;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxMoney) {
+                maxMoney= arr[i];
+            }
+        }
 
+        int minMoney = 200000;
+                for (int i1 = 0; i1 < arr.length; i1++) {
+                    if (arr[i1]< minMoney) {
+                        minMoney = arr[i1];
+            }
+        }
+        System.out.println( "Минимальная сумма трат за день составила " + minMoney + "  рублей. Максимальная сумма трат за день составила" + maxMoney+ " рублей ");
+        return arr;
+
+
+
+
+        }
     }
-}
+
+
