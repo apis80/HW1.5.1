@@ -13,12 +13,11 @@ public class Main {
         System.out.println( "Сумма трат за месяц составила  " + sum + " рублей");
         // Задача 2
         int maxMoney = 100000;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > maxMoney) {
-                maxMoney= arr[i];
+        for (int j : arr) {
+            if (j > maxMoney) {
+                maxMoney = j;
             }
         }
-
         int minMoney = 200000;
                 for (int i1 = 0; i1 < arr.length; i1++) {
                     if (arr[i1]< minMoney) {
@@ -26,6 +25,11 @@ public class Main {
             }
         }
         System.out.println( "Минимальная сумма трат за день составила " + minMoney + "  рублей. Максимальная сумма трат за день составила" + maxMoney+ " рублей ");
+        // Задача 3
+        float medium = sum / 30f;
+        System.out.println( "Средняя сумма трат за месяц составила " + medium +  "рублей" );
+
+
         return arr;
 
 
