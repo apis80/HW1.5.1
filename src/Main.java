@@ -8,8 +8,9 @@ public class Main {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
         int sum=0;
-        for (int index = 0; index < arr.length; index++) {
-            sum += arr[index];}
+        for (int k : arr) {
+            sum += k;
+        }
         System.out.println( "Сумма трат за месяц составила  " + sum + " рублей");
         // Задача 2
         int maxMoney = 100000;
@@ -19,17 +20,15 @@ public class Main {
             }
         }
         int minMoney = 200000;
-                for (int i1 = 0; i1 < arr.length; i1++) {
-                    if (arr[i1]< minMoney) {
-                        minMoney = arr[i1];
+        for (int i : arr) {
+            if (i < minMoney) {
+                minMoney = i;
             }
         }
         System.out.println( "Минимальная сумма трат за день составила " + minMoney + "  рублей. Максимальная сумма трат за день составила" + maxMoney+ " рублей ");
         // Задача 3
         float medium = sum / 30f;
-        System.out.println( "Средняя сумма трат за месяц составила " + medium +  "рублей" );
-
-
+        System.out.println( "Средняя сумма трат за месяц составила " + medium +  " рублей" );
         return arr;
 
 
