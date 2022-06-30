@@ -30,10 +30,6 @@ public class Main {
         float medium = sum / 30f;
         System.out.println( "Средняя сумма трат за месяц составила " + medium +  " рублей" );
         return arr;
-
-
-
-
         }
     }
 
